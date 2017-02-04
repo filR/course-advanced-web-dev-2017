@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <title>Particles</title>
-    <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+    <title>CSS GRID</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <style>
         * {
             padding: 0;
@@ -17,25 +17,36 @@
             left: 0;
             width: 100vw;
             height: 100vh;
-            background: hsl(20, 90%, 60%);
+            background: hsl(220, 50%, 30%);
         }
         
         body {
             display: flex;
-            font-family: 'Barrio', cursive;
-            font-size: 2em;
+            font-family: 'Montserrat', sans-serif;
+            height: 100%;
         }
         
         .banner {
             margin: auto;
-            padding: 30px;
             position: relative;
-            background: hsl(0, 0%, 15%);
-            color: white;
+            background: hsl(220, 40%, 15%);
+            color: hsl(220, 50%, 80%);
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-            
-            pointer-events: none;
+            width: 85vw;
+            padding-top: 3vw;
+            padding-bottom: 7vw;
+            transform: scale(0.7);
+        }
+        
+        h1 {
+            font-weight: bold;
+            font-size: 15vw;
+        }
+        
+        h2 {
+            font-weight: 400;
+            font-size: 2.2vw;
+            margin-top: -1vw;
         }
     </style>
 </head>
@@ -44,8 +55,8 @@
     <div id="particles-js"></div>
     
     <div class="banner">
-        I am a robot.<br>
-        beep, bloop, bleep.
+        <h1>CSS GRID</h1>
+        <h2>A tale of Hypnotoad and ALL GLORY TO THE NEW CSS LAYOUT</h2>
     </div>
     
     <script src="particles.js"></script>
