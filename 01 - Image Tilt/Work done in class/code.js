@@ -8,20 +8,22 @@ function tiltElement(event) {
     let y = event.offsetY / this.offsetHeight - 0.5;
     
     // tilt entire element
-    let backgroundCSS = `rotateY(${x * 10}deg) rotateX(${y * -10}deg)`;
+    let backgroundCSS = `rotateY(${x * 5}deg) rotateX(${y * -5}deg)`;
     $('.background').css('transform', backgroundCSS);
     
+    
     // move white border
-    let borderCSS = ``; // translateX(xx) translateY(xx)
+    let borderCSS = `translateX(${x * 15}px) translateY(${y * 15}px)`;
     $('.border').css('transform', borderCSS);
     
     
     // move text
-    let textCSS = ``; // translateX(xx) translateY(xx)
+    let textCSS = `translateX(${x * 20}px) translateY(${y * 20}px)`;
     $('.text').css('transform', textCSS);
     
+    
     // move and rotate gradient
-    let gradientCSS = ``; // translateX(xx) translateY(xx) rotateY(xx)
+    let gradientCSS = `translateX(${x * 20}px) translateY(${y * 20}px) rotateZ(${x * 2}deg)`;
     $('.gradient').css('transform', gradientCSS);
     
 }
