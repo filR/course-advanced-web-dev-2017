@@ -55,6 +55,24 @@ body {
     z-index: 3;
 }
 
+/* ignore mouse for these elements */
+.gradient,
+.border {
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
