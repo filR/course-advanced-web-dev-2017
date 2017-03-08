@@ -38,6 +38,8 @@ body {
     align-items: flex-end;
     padding: 20px;
     border: 2px solid white;
+    z-index: 5;
+    position: relative;
 }
 
 .gradient {
@@ -46,7 +48,10 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: yellow;
+    background: linear-gradient(45deg, rgb(245, 239, 40), rgb(164, 22, 169));
+    opacity: 0.3;
+    mix-blend-mode: multiply;
+    z-index: 3;
 }
 
 
