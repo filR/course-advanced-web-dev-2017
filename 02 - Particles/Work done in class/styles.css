@@ -8,7 +8,30 @@ html, body {
     height: 100%;
 }
 
+body {
+    display: flex;
+}
 
+section {
+    margin: auto;
+    text-align: center;
+    background: hsl(220, 40%, 15%);
+    color: hsl(220, 50%, 80%);
+    width: 85vw;
+    padding-top: 3vw;
+    padding-bottom: 5vw;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 10vw;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 4vw;
+    text-transform: uppercase;
+}
 
 
 
