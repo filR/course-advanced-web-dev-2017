@@ -1,3 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
 body {
     background: teal;
+    display: flex;
 }
+
+.container {
+    margin: auto;
+    width: 200px;
+}
+
+.background {
+    height: 400px;
+    background-image: url(http://unsplash.com/photos/skZplfLeDww/download?force=true);
+    background-size: cover;
+    background-position: 30% 50%;
+}
+
+.text {
+    color: white;
+}
+
+
+
+
+
+
