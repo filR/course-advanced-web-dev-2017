@@ -7,7 +7,8 @@ function tiltElement(event) {
     
     console.log('mouse position:', x, y);
     
-    $('.background').css('transform', `rotateY(0) rotateX(${x * 60}deg)`);
+    let backgroundCSS = `rotateY(${y * 5}deg) rotateX(${x * 5}deg)`;
+    $('.background').css('transform', backgroundCSS);
 }
 
 $('.container').on('mousemove', tiltElement);
