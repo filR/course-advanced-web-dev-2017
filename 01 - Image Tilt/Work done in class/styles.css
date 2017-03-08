@@ -12,6 +12,7 @@ body {
     background: teal;
     display: flex;
     font-family: Rubik, sans-serif;
+    perspective: 1000px;
 }
 
 .container {
