@@ -18,6 +18,7 @@ body {
     pointer-events: none;
 }
 
+/* background image */
 .background {
     background-color: hsl(50, 50%, 50%);
     background-image: url(http://unsplash.com/photos/1kdh6jBZMeA/download?force=true);
@@ -28,6 +29,7 @@ body {
     position: relative;
 }
 
+/* background gradient */
 .gradient {
     position: absolute;
     top: 0;
@@ -46,6 +48,7 @@ body {
     z-index: 3;
 }
 
+/* white border */
 .border {
     border: 2px solid white;
     width: 100%;
