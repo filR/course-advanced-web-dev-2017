@@ -12,14 +12,17 @@ function tiltElement(event) {
     $('.background').css('transform', backgroundCSS);
     
     // move white border
-    let borderCSS = ``;
+    let borderCSS = ``; // translateX(xx) translateY(xx)
     $('.border').css('transform', borderCSS);
     
     
     // move text
-    
+    let textCSS = ``; // translateX(xx) translateY(xx)
+    $('.text').css('transform', textCSS);
     
     // move and rotate gradient
+    let gradientCSS = ``; // translateX(xx) translateY(xx) rotateY(xx)
+    $('.gradient').css('transform', gradientCSS);
     
 }
 
