@@ -23,11 +23,24 @@ body {
     background-image: url(http://unsplash.com/photos/skZplfLeDww/download?force=true);
     background-size: cover;
     background-position: 30% 50%;
+    padding: 20px;
 }
 
 .text {
     color: white;
 }
+
+.border {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    border: 2px solid white;
+}
+
+
+
+
 
 
 
