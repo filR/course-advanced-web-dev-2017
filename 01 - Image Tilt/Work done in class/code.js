@@ -1,4 +1,9 @@
 
+function tiltElement(event) {
+    let x = event.offsetX;
+    let y = event.offsetY;
+    
+    console.log('mouse position:', x, y);
+}
 
-
-console.log('mouse position:');
+$('.background').on('mousemove', tiltElement);
