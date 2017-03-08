@@ -25,6 +25,9 @@ section {
     position: relative;
     z-index: 10;
     
+    pointer-events: none; /* ignore mouse */
+    user-select: none; /* can't select text */
+    
 /*    transform: scale(0.7);*/
 }
 
