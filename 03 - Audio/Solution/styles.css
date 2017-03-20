@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    float: right;
+    height: 50vmin;
+    margin-left: 20px;
+}
+
+p {
+    text-align: justify;
+    line-height: 150%;
+    font-size: 1.2em;
+}
