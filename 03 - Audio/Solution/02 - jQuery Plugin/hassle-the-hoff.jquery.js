@@ -18,7 +18,7 @@ $.fn.hassleTheHoff = function() {
     }
     
     function initAudio() {
-        $audioElement = $('<audio src="test.mp3" autoplay loop="true" controls="false">');
+        $audioElement = $('<audio src="test.mp3" autoplay loop="true" style="display: none;">');
         $audioElement[0].volume = 0;
         $('body').append($audioElement);
     }
