@@ -19,9 +19,9 @@ $.fn.annoyingAudio = function () {
     
     function onMouseMove(event) {
         console.log(event.pageX, event.pageY);
+        console.log($element.offset());
         
         $audio[0].volume = 0;
-        
     }
     
     $('body').mousemove(onMouseMove);
