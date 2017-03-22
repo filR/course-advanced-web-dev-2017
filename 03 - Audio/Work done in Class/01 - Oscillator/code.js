@@ -30,7 +30,7 @@ oscillator.start();
 // when user moves mouse
 function onMouseMove(event) {
     let x = event.pageX / window.innerWidth;
-    let y = event.pageY;
+    let y = event.pageY / window.innerHeight;
     
     console.log(x, y);
 
@@ -38,7 +38,11 @@ function onMouseMove(event) {
     oscillator.frequency.value = x * 5000;
 
     // y axis - change volume
-    gain.gain.setValueAtTime(1, context.currentTime);
+    gain.gain.setValueAtTime(y, context.currentTime);
+    
+    // change body background colour
+    let color = 'red';
+    $('body').css('background', color);
 }
 
 $(window).mousemove(onMouseMove);
