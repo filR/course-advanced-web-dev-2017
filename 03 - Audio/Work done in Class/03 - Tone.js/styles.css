@@ -2,11 +2,25 @@ body {
     background: hsl(50, 20%, 80%);
     display: flex;
     height: 100vh;
+    flex-direction: column;
 }
 
 section {
     margin: auto;
 }
+
+button:nth-child(1) { background: hsl(50, 50%, 50%); }
+button:nth-child(2) { background: hsl(80, 50%, 50%); }
+button:nth-child(3) { background: hsl(110, 50%, 50%); }
+button:nth-child(4) { background: hsl(140, 50%, 50%); }
+button:nth-child(5) { background: hsl(170, 50%, 50%); }
+button:nth-child(6) { background: hsl(200, 50%, 50%); }
+button:nth-child(7) { background: hsl(230, 50%, 50%); }
+button:nth-child(8) { background: hsl(260, 50%, 50%); }
+button:nth-child(9) { background: hsl(260, 50%, 50%); }
+button:nth-child(10) { background: hsl(290, 50%, 50%); }
+button:nth-child(11) { background: hsl(320, 50%, 50%); }
+
 
 button {
     background: black;
