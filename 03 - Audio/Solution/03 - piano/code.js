@@ -44,12 +44,12 @@ document.querySelectorAll('.notes button').forEach(function(button){
 // play "number" buttons on click
 document.querySelectorAll('.numbers button').forEach(function(button){
 
-    button.addEventListener('mousedown', function(e){
+    button.addEventListener('mouseenter', function(e){
         let note = Tone.Frequency(this.id, "midi").toNote()
 		synth.triggerAttack(note);
 	});
 	
-    button.addEventListener('mouseup', function(e){
+    button.addEventListener('mouseleave', function(e){
 		synth.triggerRelease();
 	});
 });
