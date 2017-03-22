@@ -29,8 +29,8 @@ $.fn.annoyingAudio = function () {
     }
     
     function onMouseMove(event) {
-        let elX = $element.offset().left;
-        let elY = $element.offset().top;
+        let elX = $element.offset().left + ($element.width() / 2);
+        let elY = $element.offset().top + ($element.height() / 2);
         
         let distance = getManhattanDistance(event.pageX, event.pageY, elX, elY);
         
