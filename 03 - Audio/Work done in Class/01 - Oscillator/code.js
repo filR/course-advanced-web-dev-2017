@@ -28,13 +28,20 @@ oscillator.start();
 
 
 // when user moves mouse
+function onMouseMove(event) {
+    let x = event.pageX;
+    let y = event.pageY;
+    
+    console.log(x, y);
 
     // x axis - change frequency
-    oscillator.frequency.value = 200;
+    oscillator.frequency.value = x;
 
     // y axis - change volume
-    gain.gain.setValueAtTime(.001, context.currentTime);
+    gain.gain.setValueAtTime(1, context.currentTime);
+}
 
+$(window).mousemove(onMouseMove);
 
 
 
