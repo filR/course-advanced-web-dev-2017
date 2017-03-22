@@ -21,6 +21,10 @@ $.fn.annoyingAudio = function () {
         let distX = x1 - x2;
         let distY = y1 - y2;
         
+        // ensure positive values
+        distX = Math.abs(distX);
+        distY = Math.abs(distY);
+        
         return distX + distY;
     }
     
@@ -30,9 +34,11 @@ $.fn.annoyingAudio = function () {
         
         let distance = getManhattanDistance(event.pageX, event.pageY, elX, elY);
         
-        console.log(distance);
+        let volume = (distance - 1000) / -1000;
+        volume = Math.max(volume, 0); // volume doesn't go lower than 0
         
-        $audio[0].volume = 0;
+        console.log(volume);
+        $audio[0].volume = volume; // 0 - 1
     }
     
     $('body').mousemove(onMouseMove);
