@@ -17,9 +17,20 @@ $.fn.annoyingAudio = function () {
         return $audioElement;
     }
     
+    function getManhattanDistance(x1, y1, x2, y2) {
+        let distX = x1 - x2;
+        let distY = y1 - y2;
+        
+        return distX + distY;
+    }
+    
     function onMouseMove(event) {
-        console.log(event.pageX, event.pageY);
-        console.log($element.offset());
+        let elX = $element.offset().left;
+        let elY = $element.offset().top;
+        
+        let distance = getManhattanDistance(event.pageX, event.pageY, elX, elY);
+        
+        console.log(distance);
         
         $audio[0].volume = 0;
     }
@@ -31,3 +42,13 @@ $.fn.annoyingAudio = function () {
  
     return this;
 }
+
+
+
+
+
+
+
+
+
+
