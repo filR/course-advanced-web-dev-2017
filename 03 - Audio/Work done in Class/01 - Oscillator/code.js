@@ -41,7 +41,9 @@ function onMouseMove(event) {
     gain.gain.setValueAtTime(y, context.currentTime);
     
     // change body background colour
-    let color = 'red';
+    let hue = x * 360; // 0 - 360
+    let saturation = 20 + y * 60; // 20 - 80
+    let color = 'hsl(' + hue + ', ' + saturation + '%, 50%)';
     $('body').css('background', color);
 }
 
