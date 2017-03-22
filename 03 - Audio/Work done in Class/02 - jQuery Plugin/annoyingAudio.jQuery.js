@@ -13,17 +13,21 @@ $.fn.annoyingAudio = function () {
         
         $audioElement[0].volume = 0;
         $('body').append($audioElement);
+        
+        return $audioElement;
     }
     
     function onMouseMove(event) {
         console.log(event.pageX, event.pageY);
+        
+        $audio[0].volume = 0;
         
     }
     
     $('body').mousemove(onMouseMove);
     
     
-    initAudio();
+    let $audio = initAudio();
  
     return this;
 }
