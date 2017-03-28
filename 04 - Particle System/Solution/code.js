@@ -13,7 +13,7 @@ canvas.height = height;
 
 // setup particles
 let particles = [];
-for (var i = 0; i < 100; i++ ) {
+for (var i = 0; i < 300; i++ ) {
     particles.push(spawnParticle());
 }
 
@@ -24,8 +24,9 @@ function spawnParticle () {
         y: getRandomNumber(0, height),
         radius: getRandomNumber(10, 50),
         color: `hsl(${ getRandomNumber(0, 360) }, 50%, 65%)`,
-        speedX: getRandomNumber(-3, 3),
-        speedY: getRandomNumber(-3, 3)
+//        speedX: getRandomNumber(-3, 3),
+//        speedY: getRandomNumber(-3, 3)
+        speedX: getRandomNumber(1, 2)
     });
 }
 
@@ -36,7 +37,14 @@ function getRandomNumber(min = 0, max = 10) {
 
 // game loop
 function loop() {
-    context.clearRect(0, 0, width, height);
+    
+    // clear rectangle
+//    context.clearRect(0, 0, width, height);
+
+    // transparent clear
+//    context.fillStyle = 'rgba(255, 255, 255, 0.05)';
+//    context.fillRect(0, 0, width, height);
+    
     
     particles.forEach((particle) => {
         particle.update();
@@ -47,3 +55,10 @@ function loop() {
 }
 
 loop();
+
+
+// IDEAS
+// repulsion from mouse
+// acceleration (instead of just speed)
+// spawn on mousemove
+// move all in one direction (river)

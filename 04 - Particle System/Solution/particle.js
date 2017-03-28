@@ -7,8 +7,8 @@ class Particle {
         y = 0,
         radius = 40,
         color = 'black',
-        speedX = 5,
-        speedY = 2
+        speedX = 0,
+        speedY = 0
     } = {}) {
         
         this.x = x;
