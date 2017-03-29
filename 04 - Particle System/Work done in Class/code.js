@@ -16,16 +16,21 @@ for (let i = 0; i < 200; i++) {
     particles.push(new Particle());
 }
 
-//particles.forEach(function (particle) {
-//    particle.draw(context);
-//});
 
-particles.forEach((particle) => {
-    particle.draw(context);
-});
+// run x times a second
+function loop() {
+    context.clearRect(0, 0, width, height);
+    
+    particles.forEach((particle) => {
+        
+        particle.update();
+        particle.draw(context);
+    });
+    
+    window.requestAnimationFrame(loop);
+}
 
-
-
+loop();
 
 
 
