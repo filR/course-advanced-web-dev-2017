@@ -5,7 +5,9 @@ class Particle {
         this.x = Math.random() * width;
         this.y = Math.random() * height;
         
-        this.speedX = Math.random() * 4 - 2;
+        this.size = Math.random() * 20 + 5; // 5 - 25
+        
+        this.speedX = Math.random() * 4 - 2; // -2 +2
         this.speedY = Math.random() * 4 - 2;
         
         let randomColor = Math.random() * 360;
@@ -16,8 +18,19 @@ class Particle {
     draw(context) {
         // draw circle
         context.beginPath();
-        context.arc(this.x, this.y, 20, 0, Math.PI * 2);
-        context.fillStyle = this.color;
+        
+        let currentSize = this.size;
+        if (this._isCloseToMouse()) {
+            currentSize *= 5;
+        }
+        context.arc(this.x, this.y, currentSize, 0, Math.PI * 2);
+        
+        if (this._isCloseToMouse()) {
+            context.fillStyle = 'black';
+        } else {
+            context.fillStyle = this.color;
+        }
+        
         context.fill();
     }
     
@@ -34,20 +47,15 @@ class Particle {
             this.y < 0) {
             this.speedY *= -1;
         }
-        
-        // react to mouse
-        if (this._isCloseToMouse()) {
-            this.color = 'black';
-        }
     }
     
     // are we close to pointer
     _isCloseToMouse() {
-        let deltaX = this.x - mouseX;
-        let deltaY = this.y - mouseY;
+        let deltaX = Math.abs(this.x - mouseX);
+        let deltaY = Math.abs(this.y - mouseY);
         
-        return deltaX < 20 &&
-               deltaY < 20;
+        return deltaX < 100 &&
+               deltaY < 100;
         
     }
 }

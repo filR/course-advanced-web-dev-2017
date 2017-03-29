@@ -23,8 +23,8 @@ for (let i = 0; i < NUM_OF_PARTICLES; i++) {
 let mouseX;
 let mouseY;
 document.onmousemove = function (event) {
-    mouseX = event.pageX;
-    mouseY = event.pageY;
+    mouseX = event.pageX * 2;
+    mouseY = event.pageY * 2;
 }
 
 
