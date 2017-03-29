@@ -2,20 +2,21 @@
 
 class Particle {
     constructor() {
-        console.log('Particle says: HELLO');
-        
         this.x = Math.random() * width;
         this.y = Math.random() * height;
         
         this.speedX = Math.random() * 4 - 2;
         this.speedY = Math.random() * 4 - 2;
+        
+        let randomColor = Math.random() * 360;
+        this.color = 'hsl(' + randomColor + ', 60%, 80%)';
     }
     
     draw(context) {
         // draw circle
         context.beginPath();
         context.arc(this.x, this.y, 20, 0, Math.PI * 2);
-        context.fillStyle = 'pink';
+        context.fillStyle = this.color;
         context.fill();
     }
     
