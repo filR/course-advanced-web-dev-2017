@@ -9,7 +9,8 @@ class Particle {
         this.speedY = Math.random() * 4 - 2;
         
         let randomColor = Math.random() * 360;
-        this.color = 'hsl(' + randomColor + ', 60%, 80%)';
+//        this.color = 'hsl(' + randomColor + ', 60%, 80%)';
+        this.color = `hsl(${randomColor}, 60%, 80%)`;
     }
     
     draw(context) {
