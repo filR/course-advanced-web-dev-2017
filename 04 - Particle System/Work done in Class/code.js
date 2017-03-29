@@ -19,11 +19,24 @@ for (let i = 0; i < NUM_OF_PARTICLES; i++) {
 }
 
 
+// update mouse position
+let mouseX;
+let mouseY;
+document.onmousemove = function (event) {
+    mouseX = event.pageX;
+    mouseY = event.pageY;
+}
+
+
 // run x times a second
 function loop() {
     
     // clear canvas
-//    context.clearRect(0, 0, width, height);
+    context.clearRect(0, 0, width, height);
+    
+//    context.fillStyle = 'hsla(200, 80%, 90%, 0.05)';
+//    context.fillRect(0, 0, width, height);
+    
 
     // for every particle
     particles.forEach((particle) => {

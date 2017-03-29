@@ -34,8 +34,32 @@ class Particle {
             this.y < 0) {
             this.speedY *= -1;
         }
+        
+        // react to mouse
+        if (isCloseToMouse()) {
+            console.log('close to mouse');
+        }
+    }
+    
+    // are we close to pointer
+    isCloseToMouse() {
+        
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
