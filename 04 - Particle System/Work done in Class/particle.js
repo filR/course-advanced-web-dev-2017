@@ -5,14 +5,22 @@ class Particle {
         this.x = Math.random() * width;
         this.y = Math.random() * height;
         
+//        this.x = width / 2;
+//        this.y = height / 2;
+        
         this.size = Math.random() * 20 + 5; // 5 - 25
         
-        this.speedX = Math.random() * 4 - 2; // -2 +2
-        this.speedY = Math.random() * 4 - 2;
+//        this.speedX = Math.random() * 4 - 2; // -2 +2
+//        this.speedY = Math.random() * 4 - 2;
         
-        let randomColor = Math.random() * 360;
-//        this.color = 'hsl(' + randomColor + ', 60%, 80%)';
-        this.color = `hsl(${randomColor}, 60%, 80%)`;
+        this.speedX = Math.random() * 4 + 2; // -2 +2
+        this.speedY = 0;
+        
+//        let randomColor = Math.random() * 360;
+//        this.color = `hsl(${randomColor}, 60%, 80%)`;
+        
+        let randomColor = Math.random() * 100;
+        this.color = `hsl(20, ${randomColor}%, 80%)`;
     }
     
     draw(context) {
