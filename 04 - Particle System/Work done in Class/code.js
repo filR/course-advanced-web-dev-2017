@@ -19,8 +19,11 @@ for (let i = 0; i < 200; i++) {
 
 // run x times a second
 function loop() {
-    context.clearRect(0, 0, width, height);
     
+    // clear canvas
+    context.clearRect(0, 0, width, height);
+
+    // for every particle
     particles.forEach((particle) => {
         
         particle.update();
