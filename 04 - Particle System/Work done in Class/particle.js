@@ -37,7 +37,7 @@ class Particle {
         
         // react to mouse
         if (this._isCloseToMouse()) {
-            console.log('close to mouse');
+            this.color = 'black';
         }
     }
     
@@ -46,12 +46,8 @@ class Particle {
         let deltaX = this.x - mouseX;
         let deltaY = this.y - mouseY;
         
-        if (deltaX < 20 &&
-           deltaY < 20) {
-            return true;
-        } else {
-            return false;
-        }
+        return deltaX < 20 &&
+               deltaY < 20;
         
     }
 }
