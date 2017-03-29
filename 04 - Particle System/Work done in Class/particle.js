@@ -36,13 +36,22 @@ class Particle {
         }
         
         // react to mouse
-        if (isCloseToMouse()) {
+        if (this._isCloseToMouse()) {
             console.log('close to mouse');
         }
     }
     
     // are we close to pointer
-    isCloseToMouse() {
+    _isCloseToMouse() {
+        let deltaX = this.x - mouseX;
+        let deltaY = this.y - mouseY;
+        
+        if (deltaX < 20 &&
+           deltaY < 20) {
+            return true;
+        } else {
+            return false;
+        }
         
     }
 }
