@@ -8,7 +8,6 @@ let context = canvas.getContext('2d');
 canvas.height = window.innerHeight * 2;
 canvas.width = window.innerWidth * 2;
 
-
 // draw circle
 context.beginPath();
 context.arc(50, 50, 100, 0, Math.PI * 2);
