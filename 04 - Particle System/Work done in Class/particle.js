@@ -2,19 +2,19 @@
 
 class Particle {
     constructor() {
-        this.x = Math.random() * width;
-        this.y = Math.random() * height;
+//        this.x = Math.random() * width;
+//        this.y = Math.random() * height;
         
-//        this.x = width / 2;
-//        this.y = height / 2;
+        this.x = width / 2;
+        this.y = height / 2;
         
         this.size = Math.random() * 20 + 5; // 5 - 25
         
-//        this.speedX = Math.random() * 4 - 2; // -2 +2
-//        this.speedY = Math.random() * 4 - 2;
+        this.speedX = Math.random() * 4 - 2; // -2 +2
+        this.speedY = Math.random() * 4 - 2;
         
-        this.speedX = Math.random() * 4 + 2; // -2 +2
-        this.speedY = 0;
+//        this.speedX = Math.random() * 4 + 2; // -2 +2
+//        this.speedY = 0;
         
 //        let randomColor = Math.random() * 360;
 //        this.color = `hsl(${randomColor}, 60%, 80%)`;
@@ -46,14 +46,22 @@ class Particle {
         this.x += this.speedX;
         this.y += this.speedY;
         
+        this.speedX *= 0.995;
+        this.speedY *= 0.995;
+        
         // bounce off walls
-        if (this.x >= width ||
-            this.x < 0) {
-            this.speedX *= -1;
-        }
-        if (this.y >= height ||
-            this.y < 0) {
-            this.speedY *= -1;
+//        if (this.x >= width ||
+//            this.x < 0) {
+//            this.speedX *= -1;
+//        }
+//        if (this.y >= height ||
+//            this.y < 0) {
+//            this.speedY *= -1;
+//        }
+   
+        // exit right, enter left
+        if (this.x >= width) {
+            this.x = 0;
         }
     }
     
