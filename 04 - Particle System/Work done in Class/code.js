@@ -23,7 +23,7 @@ for (let i = 0; i < NUM_OF_PARTICLES; i++) {
 function loop() {
     
     // clear canvas
-    context.clearRect(0, 0, width, height);
+//    context.clearRect(0, 0, width, height);
 
     // for every particle
     particles.forEach((particle) => {
