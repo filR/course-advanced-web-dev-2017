@@ -13,3 +13,9 @@ context.beginPath();
 context.arc(50, 50, 100, 0, Math.PI * 2);
 context.fillStyle = 'pink';
 context.fill();
+
+
+let p = new Particle();
+
+
+
