@@ -19,11 +19,34 @@ class Particle {
         this.speedY = speedY;
     }
     
+    get position() {
+        return {
+            x: this.x,
+            y: this.y
+        }
+    }
+    
     draw (context) {
-        context.beginPath();
-        context.arc(this.x, this.y, this.radius, 0, Math.PI * 2); // draw circle
-        context.fillStyle = this.color;
-        context.fill();
+//        context.beginPath();
+//        context.arc(this.x, this.y, this.radius, 0, Math.PI * 2); // draw circle
+//        context.fillStyle = this.color;
+//        context.fill();
+        
+        let size = this.radius;
+        if (this.isCloseToMouse()) {
+            size *= 5;
+        }
+        
+        context.drawImage(image, this.x - size / 2, this.y - size / 2, size, size);
+    }
+    
+    isCloseToMouse() {
+        const TOLERANCE = 50;
+        
+        return this.x > mouseX - TOLERANCE &&
+            this.x < mouseX + TOLERANCE &&
+            this.y > mouseY - TOLERANCE &&
+            this.y < mouseY + TOLERANCE;
     }
     
     update () {
