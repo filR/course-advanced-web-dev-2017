@@ -23,10 +23,19 @@ class Particle {
         this.x += this.speedX;
         this.y += this.speedY;
         
-        // 
-        if (this.x >= width) {
+        // bounce off walls
+        if (this.x >= width ||
+            this.x < 0) {
             this.speedX *= -1;
+        }
+        if (this.y >= height ||
+            this.y < 0) {
+            this.speedY *= -1;
         }
     }
 }
+
+
+
+
 
