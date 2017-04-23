@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Scroll Library</title>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+
+        <main>
+            <img src="https://unsplash.it/200/300/?random" width="200" height="300">
+            <img src="https://unsplash.it/200/301/?random" width="200" height="301">
+            <img src="https://unsplash.it/200/302/?random" width="200" height="302">
+            <img src="https://unsplash.it/200/303/?random" width="200" height="303">
+            <img src="https://unsplash.it/200/304/?random" width="200" height="304">
+            <img src="https://unsplash.it/200/305/?random" width="200" height="305">
+            <img src="https://unsplash.it/200/306/?random" width="200" height="306">
+            <img src="https://unsplash.it/200/307/?random" width="200" height="307">
+            <img src="https://unsplash.it/200/308/?random" width="200" height="308">
+            <img src="https://unsplash.it/200/309/?random" width="200" height="309">
+            <img src="https://unsplash.it/200/310/?random" width="200" height="310">
+            <img src="https://unsplash.it/200/311/?random" width="200" height="311">
+            <img src="https://unsplash.it/200/312/?random" width="200" height="312">
+            <img src="https://unsplash.it/200/313/?random" width="200" height="313">
+            <img src="https://unsplash.it/200/314/?random" width="200" height="314">
+            <img src="https://unsplash.it/200/315/?random" width="200" height="315">
+            <img src="https://unsplash.it/200/316/?random" width="200" height="316">
+            <img src="https://unsplash.it/200/317/?random" width="200" height="317">
+            <img src="https://unsplash.it/200/318/?random" width="200" height="318">
+            <img src="https://unsplash.it/200/319/?random" width="200" height="319">
+            <img src="https://unsplash.it/200/320/?random" width="200" height="320">
+            <img src="https://unsplash.it/200/321/?random" width="200" height="321">
+            <img src="https://unsplash.it/200/322/?random" width="200" height="322">
+            <img src="https://unsplash.it/200/323/?random" width="200" height="323">
+            <img src="https://unsplash.it/200/324/?random" width="200" height="324">
+            <img src="https://unsplash.it/200/325/?random" width="200" height="325">
+            <img src="https://unsplash.it/200/326/?random" width="200" height="326">
+            <img src="https://unsplash.it/200/327/?random" width="200" height="327">
+            <img src="https://unsplash.it/200/328/?random" width="200" height="328">
+            <img src="https://unsplash.it/200/329/?random" width="200" height="329">
+        </main>
+       
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <script>
+        // https://github.com/jlmakes/scrollreveal
+
+       let sr = ScrollReveal({
+           // 'bottom', 'left', 'top', 'right'
+            origin: 'bottom',
+
+            // Can be any valid CSS distance, e.g. '5rem', '10%', '20vw', etc.
+            distance: '20px',
+
+            // Time in milliseconds.
+            duration: 500,
+            delay: 0,
+
+            // Starting angles in degrees, will transition from these values to 0 in all axes.
+            rotate: { x: 0, y: 0, z: 0 },
+
+            // Starting opacity value, before transitioning to the computed opacity.
+            opacity: 0,
+
+            // Starting scale value, will transition from this value to 1
+            scale: 0.9,
+
+            // Accepts any valid CSS easing, e.g. 'ease', 'ease-in-out', 'linear', etc.
+            easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+
+            // `<html>` is the default reveal container. You can pass either:
+            // DOM Node, e.g. document.querySelector('.fooContainer')
+            // Selector, e.g. '.fooContainer'
+            container: window.document.documentElement,
+
+            // true/false to control reveal animations on mobile.
+            mobile: true,
+
+            // true:  reveals occur every time elements become visible
+            // false: reveals occur once as elements become visible
+            reset: false,
+
+            // 'always' — delay for all reveal animations
+            // 'once'   — delay only the first time reveals occur
+            // 'onload' - delay only for animations triggered by first load
+            useDelay: 'always',
+
+            // Change when an element is considered in the viewport. The default value
+            // of 0.20 means 20% of an element must be visible for its reveal to occur.
+            viewFactor: 0.2,
+
+            // Pixel values that alter the container boundaries.
+            // e.g. Set `{ top: 48 }`, if you have a 48px tall fixed toolbar.
+            // --
+            // Visual Aid: https://scrollrevealjs.org/assets/viewoffset.png
+            viewOffset: { top: 0, right: 0, bottom: 0, left: 0 },
+        });
+        sr.reveal('img');
+    </script>
+    </body>
+</html>
