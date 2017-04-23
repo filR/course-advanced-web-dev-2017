@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+    <head>
+        <title>CSS Grid</title>
+        <style>
+            div {
+                background-image: url(https://unsplash.it/800?random);
+                font-size: 2em;
+                padding: 0.2em;
+                font-family: sans-serif;
+            }
+
+            main {
+                width: 100vw;
+                height: 100vh;
+            }
+
+            main {
+                /*display: grid;*/
+                /*grid-template-columns: 20% 20%;*/
+                /*grid-gap: 20px;*/
+                /*grid-template-columns: 20% auto;*/
+                /*grid-template-columns: 1fr 2fr 1fr;*/
+                /*grid-template-columns: repeat(2, 1fr);*/
+                /*grid-template-rows: 10% auto 10%;*/
+                /*grid-template-areas:*/
+                    /*"header header"*/
+                    /*"sidebar main"*/
+                    /*"footer footer";*/
+
+                    /*"... footer";*/
+                /*align-items: start;*/
+                /*justify-items: start;*/
+            }
+
+            .gridnamed div:nth-child(1) {
+                /*grid-area: header;*/
+            }
+            .gridnamed div:nth-child(2) {
+                /*grid-area: sidebar;*/
+            }
+            .gridnamed div:nth-child(3) {
+                /*grid-area: main;*/
+            }
+            .gridnamed div:nth-child(4) {
+                /*grid-area: footer;*/
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </main>
+    </body>
+</html>
