@@ -4,10 +4,36 @@
     <title>SVG Scroll</title>
     <style>
     
+        body {
+            height: 500vh;
+        }
+        
+        svg {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        /* style SVG via CSS */
         path {
             stroke: hsl(50, 50%, 50%);
             stroke-width: 10px;
             fill: none;
+            
+            stroke-dasharray: 50 10;
+            stroke-dashoffset: 25;
+            
+/*            animation: animateDashes 2s linear infinite;*/
+        }
+        
+        @keyframes animateDashes {
+            from {
+                stroke-dashoffset: 0;
+            }
+            to {
+                stroke-dashoffset: 60;
+            }
         }
     
     </style>
