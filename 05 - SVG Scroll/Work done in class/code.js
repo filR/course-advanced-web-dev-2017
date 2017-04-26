@@ -14,5 +14,15 @@ path.style.strokeDashoffset = pathLength;
 
 // when the page is scrolled
 window.addEventListener('scroll', function (event) {
-    console.log('xx');
+    
+    // what % down is it
+    let scrollDistance = window.pageYOffset;
+    let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    
+    // how much to show
+    let scrollPercentage = scrollDistance / scrollHeight;
+    let drawLength = scrollPercentage * pathLength;
+    
+    // draw path
+    path.style.strokeDashoffset = pathLength - drawLength;
 });
