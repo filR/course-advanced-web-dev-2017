@@ -50,6 +50,57 @@ main {
 
 
 
+// ANIMATIONS -----------------------------
+
+main {
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+header {
+    animation: slideDown 2s cubic-bezier(.24,1.13,.55,.92);
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+header h1,
+header h2 {
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
