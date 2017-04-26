@@ -42,7 +42,7 @@
         window.addEventListener("scroll", function(e) {
         
             // What % down is it?
-            let scrollDistance = document.documentElement.scrollTop + document.body.scrollTop;
+            let scrollDistance = window.pageYOffset;
             let pageHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             let scrollPercentage = scrollDistance / pageHeight;
                 
