@@ -3,3 +3,33 @@
 body {
     background: @bodyBackground;
 }
+
+// mixin
+.underlined(@color: grey) {
+    text-decoration: underline;
+    font-style: italic;
+    color: @color;
+}
+
+header {
+    background: white;
+    padding: 0.5em;
+    
+    h1 { // header h1
+        font-size: 3em;
+        
+        span { // header h1 span
+            color: hsl(0, 50%, 50%);
+        }
+    }
+    
+    h2 {
+        .underlined();
+    }
+}
+
+main {
+    p {
+        .underlined(rgb(200, 100, 100));
+    }
+}
