@@ -74,9 +74,17 @@ div-nth-child(3) {
 
 /* RESPONSIVE ---------- */
 
+/* narrower than 600px wide */
 @media (max-width: 600px) {
     main {
         grid-gap: 10px;
+        
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "sidebar sidebar"
+            "footer1 footer2";
     }
 }
 
