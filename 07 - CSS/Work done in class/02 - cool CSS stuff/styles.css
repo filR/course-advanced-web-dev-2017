@@ -53,10 +53,39 @@ main {
 
 /* SHAPES ---------------------- */
 
+footer {
+    text-align: justify;
+}
+
 footer img {
     max-width: 75%;
     float: right;
+    
+/*    margin-right: -200px;*/
+    
+    shape-outside: url(head.png);
+    shape-margin: 3%;
 }
+
+
+
+/* STICKY -------------- */
+
+body {
+    padding-top: 30vh;
+}
+
+body > img {
+    position: sticky;
+    top: 10px;
+}
+
+
+
+
+
+
+
 
 
 
