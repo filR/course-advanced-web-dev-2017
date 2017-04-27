@@ -1,0 +1,26 @@
+body {
+    font-family: Georgia;
+    font-size: 1.5em;
+    line-height: 150%;
+    padding: 0 3em;
+}
+
+main {
+    column-count: 2;
+    column-gap: 80px;
+    column-rule: 1px solid grey;
+}
+
+@supports(column-count: 2) {
+    p {
+        font-weight: bold;
+    }
+}
+
+
+
+
+
+
+
+
