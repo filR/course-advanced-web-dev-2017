@@ -38,10 +38,25 @@ main {
 
 /* CLIP PATH ------------------ */
 
+body > img {
+    max-width: 100%;
+    margin-bottom: 2em;
+    
+    clip-path: inset(0 0 0 52%);
+/*    clip-path: inset(0 48% 0 0);*/
+}
+
+main {
+/*    clip-path: circle(200px at 200px 200px);*/
+}
 
 
+/* SHAPES ---------------------- */
 
-
+footer img {
+    max-width: 75%;
+    float: right;
+}
 
 
 
