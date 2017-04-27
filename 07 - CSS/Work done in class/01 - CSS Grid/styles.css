@@ -72,9 +72,13 @@ div-nth-child(3) {
 }
 
 
+/* RESPONSIVE ---------- */
 
-
-
+@media (max-width: 600px) {
+    main {
+        grid-gap: 10px;
+    }
+}
 
 
 
