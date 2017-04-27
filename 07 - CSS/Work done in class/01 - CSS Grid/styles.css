@@ -88,6 +88,17 @@ div-nth-child(3) {
     }
 }
 
+/* wider than 1000px */
+@media (min-width: 1000px) {
+    main {
+        max-width: calc(1010px + 4em);
+        margin-left: auto;
+        margin-right: auto;
+        border: 5px solid black;
+        padding: 2em;
+    }
+}
+
 
 
 
