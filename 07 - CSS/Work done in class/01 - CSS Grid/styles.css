@@ -1,0 +1,28 @@
+main {
+    height: 100vh;
+}
+
+div {
+    font-size: 3em;
+    font-family: sans-serif;
+    font-weight: bold;
+    
+    background-size: cover;
+    background-position: center;
+}
+
+div:nth-child(1) { background-image: url(http://theawesomedaily.com/wp-content/uploads/2016/10/funny-fox-pictures-3-1.jpg); }
+
+div:nth-child(2) { background-image: url(https://www.funnypica.com/wp-content/uploads/2013/03/Funny-Fox-07.jpg); }
+
+div:nth-child(3) { background-image: url(https://i.ytimg.com/vi/icqDxNab3Do/maxresdefault.jpg); }
+
+div:nth-child(4) { background-image: url(https://cdn3.littlethings.com/app/uploads/2014/09/rxDvM.jpg); }
+
+div:nth-child(5) { background-image: url(http://i.imgur.com/btWw5zw.jpg?1); }
+
+div:nth-child(6) { background-image: url(http://i.dailymail.co.uk/i/pix/2011/11/20/article-2063680-0EDDA13B00000578-901_634x416.jpg); }
+
+div:nth-child(7) { background-image: url(http://i.dailymail.co.uk/i/pix/2016/05/20/16/346C10D700000578-0-image-a-81_1463758781999.jpg); }
+
+
