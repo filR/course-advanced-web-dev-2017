@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 main {
     height: 100vh;
 }
@@ -6,6 +10,8 @@ div {
     font-size: 3em;
     font-family: sans-serif;
     font-weight: bold;
+    color: white;
+    padding: 0.2em;
     
     background-size: cover;
     background-position: center;
@@ -24,5 +30,69 @@ div:nth-child(5) { background-image: url(http://i.imgur.com/btWw5zw.jpg?1); }
 div:nth-child(6) { background-image: url(http://i.dailymail.co.uk/i/pix/2011/11/20/article-2063680-0EDDA13B00000578-901_634x416.jpg); }
 
 div:nth-child(7) { background-image: url(http://i.dailymail.co.uk/i/pix/2016/05/20/16/346C10D700000578-0-image-a-81_1463758781999.jpg); }
+
+
+
+
+
+/* CSS GRID ----------------- */
+
+main {
+    display: grid;
+    
+    grid-gap: 20px;
+    
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-rows: 3fr 2fr 2fr;
+    
+    grid-template-areas:
+        "header header header"
+        "sidebar main main"
+        "sidebar footer1 footer2";
+}
+
+div:nth-child(1) {
+    grid-area: header;
+}
+
+div:nth-child(6) {
+    grid-area: sidebar;
+}
+
+div:nth-child(7) {
+    grid-area: main;
+}
+
+div:nth-child(4) {
+    grid-area: footer1;
+}
+
+div-nth-child(3) {
+    grid-area: footer: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
