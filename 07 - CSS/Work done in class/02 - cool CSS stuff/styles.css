@@ -11,11 +11,40 @@ main {
     column-rule: 1px solid grey;
 }
 
-@supports(column-count: 2) {
+@supports(ljhsakfjhsef) {
     p {
         font-weight: bold;
     }
 }
+
+/* JAVASCRIPT
+    CSS.supports('column-count', '2');
+*/
+
+
+
+/* VARIABLES ---------------- */
+
+:root {
+    --columns: 3;
+    --textColor: hsl(220, 50%, 40%);
+}
+
+main {
+    column-count: calc(var(--columns) * 2);
+    color: var(--textColor);
+}
+
+
+/* CLIP PATH ------------------ */
+
+
+
+
+
+
+
+
 
 
 
