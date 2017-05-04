@@ -76,6 +76,10 @@
             reset: true,
             beforeReset: function (el) {
                 console.log('before reset');
+                
+                for (let i = 0; i < 10; i++) {
+                    console.log('i', i);
+                }
             }
         });
         sr.reveal('img');
